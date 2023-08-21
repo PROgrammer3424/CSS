@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+.footer{
+    background-color: #100D17;
+    color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    height: 4rem;
+}
+/* a{
+    text-decoration: none;
+    display: block;
+    color: #153749;
+}
+a:hover{
+    background-color: #FFB7B0;
+} */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    background-color: #F2F2F2;
+    COLOR: #100D17;
+}
+main{
+    flex-grow: 1;
+}
+.hero-estudiante{
+    display: flex;
+    min-height: 100vh;
+    background-image: url("https://i.imgur.com/TorPgf0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    font-size: 5vw;
+    color: #F2F2F2;    
+    letter-spacing: 2rem;
+}
+.hero-estudiante div{
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0, .75);
+}
+.hero-profesor{
+    display: flex;
+    min-height: 100vh;
+    background-image: url("https://i.imgur.com/TorPgf0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    font-size: 4vw;
+    color: #F2F2F2;    
+}
+.hero-profesor div{
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0, .75);
+}
+.hero-administrador{
+    display: flex;
+    min-height: 100vh;
+    background-image: url("https://i.imgur.com/TorPgf0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    font-size: 4vw;
+    color: #F2F2F2;    
+}
+.hero-administrador div{
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0, .75);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: #E57F84; */
+    /* background-color: #2F5061; */
+    /* background-color: #4C5270; */
+    /* color: #100D17; */
+    color: #F2F2F2;
+    height: 4rem;
+    padding: 0 2rem 0 2rem;
+    align-items: center;
+    
+}
+.enca{
+    display: flex;
+    align-items: center;
+}
+.enca img{
+    margin: 0 1rem 0 0;
+}
+.enca h3{
+    display: block;
+    margin: 1rem;
+}
+.datos{
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+}
+.datos li{
+    padding: 3px;
+}
+.enlace{
+    display: flex;
+    align-items: center;
+}
+.enlace h3{
+    display: block;
+}
+.enlace button{
+    margin-right: 0.4rem;
+}
+.flecha{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    border-radius: 1rem;
+    transition: transform 0.3s;
+}
+.icon{
+    background-color: transparent !important;
+}
+.flecha:hover{
+    
+    opacity: .5;
+    transform: scale(1.5);
+}
+.flecha a{
+    display: flex;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+}
+.menu{
+    display: flex;
+    height: 4rem;
+    /* background-color: #E22121; */
+    background-color: #FF878E; 
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu ul{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: .2rem;
+}
+.menu ul li{
+    padding: 0px 50px;
+    position: relative;
+    overflow: hidden;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.menu ul li::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background: #E22121;
+    bottom: 0;
+    transform: translateX(110px);
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.55, 0, .1, 1);
+}
+.nav ul.show{
+    margin:50px;
+}
+
+.menu-icon{
+    display: inline-block;
+    width: 10px;
+}
+.menu ul li:hover::before{
+    transform: translateX(0);
+    opacity: 1;
+    width: 0;
+}
+
+.menu ul li a:visited{
+    color: #F2F2F2;
+}
+.menu ul li a:hover{
+    color: #E22121;
+}
+.menu ul li a:active{
+    color: #100D17;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #C2C0B9;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background:  #100D17;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-button{
+    display: initial;
+}
+.cambio{
+    letter-spacing: 7px;
+    font-weight: 800;
+    font-size: calc(.5em + 1vw);
+}
+.tituloactual{
+    letter-spacing: 7px;
+    font-size: 1.5rem;
+}
+.cerrar{
+    border: none;
+    background-color: transparent;
+    transition: transform 0.3s;
+}
+.cerrar:hover{
+    background-color: transparent;
+    /* opacity: 0.5; */
+    transform: scale(1.3);
+}
+.segunda{
+    color: #0A0708;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #100D17;
+    width: 100%;
+    height: 50px;
+    top: 0;
+}
+.navegador{
+    position: sticky;
+}
+/* .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.name{
+    font-size: calc(.2em + 1vw);
+}
+
+.cap{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: .5rem 0 1rem 0;
+    letter-spacing: .2em;
+}
+.adtit{
+    background-color: #2F5061;
+}
+.administrador{
+    /* background-color: #0C6170; */
+    /* background-color: rgb(255, 130, 161); */
+    background-color: #f3878c;
+}
+.ad_estudiante{
+    /* background-color: #37BEB0; */
+    /* background-color: #ff98aa; */
+    background-color: #ffa5ac;
+}
+.protit{
+    background-color: #2b2b2b;
+}
+.profesor{
+    background-color: #989ea1;
+    
+}
+.ad_profesor{
+    background-color: #B9B7BD;
+}
+
+.esttic{
+    background-color: #05445E;
+}
+.estudiante{
+    background-color: #189AB4;
+    color: #000;
+}
+.sub_estudiante{
+    background-color: #A0E7E5;
+    color: #000;
+}
+.sum{
+    cursor: pointer;
+    list-style-type: none;
+    margin: 0;
+    color: #153749;
+}
+
+.mostrando{
+    padding-left: 2rem;
+    list-style-type: none;
+    margin: 0;
+    /* display: none; */
+}
+
+.error{
+    background-color: #E22121;
+    border-radius: 5px;
+    border: none;
+}
+.border:first-child{
+    border: none;
+}
+.border:first-child th{
+    border: none;
+}
+td{
+    text-align: center;
+}
+.todo{
+    text-align: left !important;
+}
+.arti{
+    display: block;
+}
+.arti:hover + .mostrando{
+    display: block;
+}
+.columna{
+    background-color: #c0b2fb;
+}
+select{
+    width: 80%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+.boton{
+    background-color: transparent;
+    width: auto;
+    height: 25px;
+    /* border: none; */
+    border-radius: 10px;
+    /* color: #F2F2F2; */
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #0A0708;
+    border:  thin solid #0A0708;
+    transition: transform 0.3s;
+    margin: 1rem;
+    padding: 0 10px;
+}
+.boton:hover{
+    background-color: #0A0708;
+    color: #f2f2f2;
+    transform: scale(1.1);
+}
+
+.alta{
+    background-color: green;
+    width: 150px;
+    height: 25px;
+    /* border: none; */
+    border-radius: 10px;
+    /* color: #F2F2F2; */
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    border:  thin solid #0A0708;
+    transition: transform 0.3s;
+    margin: 1rem;
+}
+.alta:hover{
+    background-color: #0A0708;
+    color: #f2f2f2;
+    transform: scale(1.1);
+}
+
+.baja{
+    background-color: red;
+    width: 150px;
+    height: 25px;
+    /* border: none; */
+    border-radius: 10px;
+    /* color: #F2F2F2; */
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+    border:  thin solid #0A0708;
+    transition: transform 0.3s;
+    margin: 1rem;
+}
+.baja:hover{
+    background-color: #0A0708;
+    color: #f2f2f2;
+    transform: scale(1.1);
+}
+
+.dar{
+    padding-left: .2rem;
+    padding-right: 1rem;
+}
+
+.calificar{
+    width: 100%;
+}
+.fecha{
+    padding-right: 2rem;
+    font-family: 'Montserrat';
+}
+
+.arti{
+    margin-left: 10px;
+  }
+  .mostrando li a{
+    text-decoration: none !important;
+}
+.encabe{
+    padding-right: .5rem;
+}
+.titulo_actual{
+    letter-spacing: .5rem;
+}
+.pie{
+    margin-top: 50px;
+    color:#0A0708;
+}
+.subtitulo{
+    margin-right: 1rem;
+}
+.linea{
+    display: inline-block;
+}
+.total{
+    font-weight: 900;
+    letter-spacing: 1rem;
+}
+.agotado{
+    background-color: red;
+}
+.lleno{
+    background-color: green;
+}
+.medio{
+    background-color: yellow;
+}
